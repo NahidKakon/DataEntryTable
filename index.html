@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Input and Export to Excel</title>
+   
+</head>
+<body>
+
+<h2>Data Entry Table</h2>
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Numeric</th>
+            <th>Text</th>
+            <th>Picture</th>
+            <!-- Repeat th for additional columns -->
+            <th>Numeric 2</th>
+            <th>Text 2</th>
+            <th>Picture 2</th>
+            <!-- ... up to 30 columns -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><input type="number" name="numeric1"></td>
+            <td><input type="text" name="text1"></td>
+            <td><input type="file" name="picture1" accept="image/*"></td>
+            <!-- Repeat td for additional columns -->
+            <td><input type="number" name="numeric2"></td>
+            <td><input type="text" name="text2"></td>
+            <td><input type="file" name="picture2" accept="image/*"></td>
+            <!-- ... up to 30 columns -->
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+<button onclick="exportTableToExcel('dataTable', 'table_data')">Export to Excel</button>
+
+
+</body>
+</html>
