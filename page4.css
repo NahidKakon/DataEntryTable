@@ -1,0 +1,152 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #ffffff; /* White background for the entire page */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #f8f8f8; /* Light grey for the navbar */
+    /* border: none;
+    border-bottom: 1px solid #ddd; /* Subtle border for separation */
+    /* font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-brand {
+    color: #333 !important;
+    font-weight: bold;
+  }*/
+  
+  .navbar-nav li a {
+    color: #0c8ca9 !important;
+  }
+  
+  .navbar-nav li a:hover {
+    color: #f3ad0c !important;
+  }
+  
+  /* .container-fluid {
+    padding: 60px 50px;
+     background-color: #ffffff; /* White background for the containers */
+   } */
+  
+  .row {
+    margin: 0; 
+  }
+   
+  .col-sm-7 {
+    padding: 20px;
+  }
+  
+  .col-sm-7 img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+    
+  .btn-custom {
+    background-color: #db921e;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: hsl(194, 89%, 38%);
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  .bg-1, .bg-2, .bg-3, .bg-4 {
+    background-color: #ffffff; /* Ensure consistency */
+    color: #333; /* Dark text for contrast */
+  }
+  
+  .bg-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: absolute;
+    top: 50%;
+    right: 20%; /* Move the container to the left */
+    transform: translateY(-50%);
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+  }
+  
+
+  
+div {
+
+    /* Style for the image */
+
+.top-left-image {
+   position: absolute;  /* Allows specific positioning */
+   top: 10px;  /* Adjust vertical position */
+   left: 100px;  /* Adjust horizontal position */
+   width: 200px;  /* Set image width */
+   height: auto;  /* Keep aspect ratio */
+
+   border: 1px solid black;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   margin-right: 150px;
+   margin-left: 80px;
+   background-color: white;
+ }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo img {
+    height: 30px; /* Adjust the logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: hsl(61, 80%, 46%);
+    border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="600" height="400"></canvas>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        const data = {
+            labels: ["Apr-May-Jun 2021", "Jul-Aug-Sep 2021", "Oct-Nov-Dec 2021", "Jan-Feb-Mar 2022", "Apr-May-Jun 2022"],
+            datasets: [
+                {
+                    label: 'Good',
+                    data: [1.5, 2.0, 2.5, 3.0, 3.5],
+                    backgroundColor: 'green',
+                    borderColor: 'grey',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Approaching Target',
+                    data: [1.0, 1.5, 2.0, 2.5, 3.0],
+                    backgroundColor: 'blue',
+                    borderColor: 'grey',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Requires Improvement',
+                    data: [0.5, 1.0, 1.5, 2.0, 2.5],
+                    backgroundColor: 'orange',
+                    borderColor: 'grey',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Inadequate',
+                    data: [0.5, 1.0, 1.5, 2.0, 2.5],
+                    backgroundColor: 'red',
+                    borderColor: 'grey',
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        const options = {
+            responsive: true,
+            scales: {
+                x: {
+                    stacked: false
+                },
+                y: {
+                    stacked: false,
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Percentage (%)'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Quarterly Year Ratings Based on FTE Disabled People Employed'
+                }
+            }
+        };
+
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+</body>
+</html>

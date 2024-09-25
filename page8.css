@@ -1,0 +1,43 @@
+
+/* Container for Image 4 */
+.image-four-container {
+    position: absolute;
+    bottom: 0px; /* Adjust this value for vertical positioning */
+    right: 50px;  /* Adjust this value for horizontal positioning */
+}
+
+.image-four-container img {
+    /* border-radius:100%; */
+    margin: 2px; /* Adjusted margin */
+    width: 500px; /* Adjust size as needed */
+    height: 260px; /* Adjust size as needed */
+}
+
+#upload {
+    background-color: white;
+    color: #0f0e0e;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* #upload {
+    background-color: hsl(194, 89%, 38%);
+  }
+    */
+
+#appendLabel {
+    background-color: white;
+    color: #0c0c0c;
+    padding: 1px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,251 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures content doesn't overflow the container */
+    border: 3px solid #b76d05; /* Increased border size */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px; /* Reduced padding for a more compact look */
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fdfdfd;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #495057;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px; /* Adjusted padding for a snug fit */
+    margin: 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 50%;
+    padding: 10px; /* Adjusted padding for consistency */
+    margin: 20px auto;
+    background-color: rgb(5, 68, 26);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px; /* Reduced font size for smaller screens */
+    }
+
+    button {
+        width: 100%;
+        color:rgb(4, 88, 37);
+    }
+}
+
+
+/* For Calculator */
+.modal-header, h4, .close {
+    background-color: #d38404;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: hsl(0, 85%, 16%);
+  }
+  img {
+    border: 0px solid #320202;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+  }
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    width: 850px;
+    height: 700px;
+    border: 3px solid #0d9eec;
+  }
+  /* Move the Login button to the right */
+  
+  #myBtn {
+    float: center;
+    margin-trim: 80px; /* Adjust this value as needed */
+    color:white;
+    background-color: hsla(36, 82%, 50%, 0.938)
+  }
+
+
+#myBtn1 {
+  float: center;
+  margin-trim: 80px; /* Adjust this value as needed */
+  color:white;
+  font-size: 40px;
+  background-color: hsl(33, 94%, 27%)
+  
+
+}
+
+  /* for calculator */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hwb(29 1% 81%);
+    margin: 0;
+}
+
+.calculator {
+    border: 1px solid #640b0bed;
+    padding: 20px;
+    background-color: #b36206;
+    border-radius: 5px;
+    box-shadow: 0 0 10px pink(160, 92, 169, 0.1);
+   animation: mymove 4s infinite;
+}
+
+  
+  @keyframes mymove {
+    from {background-color: #8f3114;}
+    to {background-color: rgb(8, 204, 239);}
+  }
+
+
+
+#display {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 1px solid #011f10d9;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    border: 1px solid #be390c;
+    border-radius: 5px;
+    background-color: #ea8007;
+    cursor: pointer;
+    /*transition: background-color 0.2s, transform 0.2s;*/
+}
+
+button:hover {
+    background-color: hsl(15, 92%, 40%);
+}
+  
+ /*.button:active {
+    background-color: #884141;
+    box-shadow: 0 10px #837c7c;
+    /*transform: scale(0.95);*/
+  
+  .Paragraph
+{
+	text-align: center;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 2, 2);
+    font-weight: bold;
+}
+
+
+.button:active {
+  background-color: hsl(60, 27%, 85%);
+  box-shadow: 0 5px #0c7ccc;
+  transform: translateY(26px);
+}
+
+.button1 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #bb3232;
+    background-color: hsl(198, 91%, 46%);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #ed6464;
+  }
+  
+  .button1:hover {background-color: #e95404}
+  
+  .button1:active {
+    background-color: #11a2d7;
+    box-shadow: 0 5px #013c5a;
+    transform: translateY(18px);
+  }

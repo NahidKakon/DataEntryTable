@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to CSV</title>
+    <link rel="stylesheet" href="indexn1.css"> </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+
+    <div class="container-fluid mt-3">
+        <!-- <div class="row">
+        <div class="col p-1 bg-primary text-white">.col</div> -->
+          <!-- Navbar -->
+          <ul class="navbar-nav">
+              <!-- <class="nav-item">
+                  <img id="top-left-image" src="Images/6.jpg" alt="Image6" width="800" height="68"> -->
+              
+                <!-- <a class="nav-link" href="#">Link 1</a> -->
+            
+              <class="nav-item">
+                <!-- <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a> -->
+              
+            </ul>
+
+<br/><br/><br/>
+
+    <div class="container">
+        <h2>Data Entry Form</h2>
+        <form id="dataForm">
+        <table style="width:100%">
+        <tr>
+                    <th><label for="dropdown0">Contract ID </label> </th>
+                    <th><label for="dropdown1">Select Theme Name </label> </th>
+                    <th><label for="dropdown2">Reference</label> </th>
+                    <th><label for="dropdown3">Select Activity Name </label> </th>
+                    <th><label for="dropdown4">Select Activity description </label> </th>
+                    <th><label for="Input"> Status </label></th>
+                    <th><label for="dropdown5">Proxy Unit</label> </th>
+                    <th><label for="dropdown6">Proxy Value (Per Unit) </label> </th>
+                    <th><label for="Input">Commited Units</label> </th>
+                    <th><label for="input"> Commited Value Per Activity </label> </th>
+                    <th><label for="Input">Delivered Units </label> </th>
+                    <th><label for="calculation">Delivered Value Per Activity </label> </th>
+                    <th><label for="Input">Start Date </label> </th>
+                    <th><label for="Input">End Date </label> </th>
+        </tr>
+            
+        <td>
+
+            <div class="form-group">
+                <label for="Contract ID">Contract ID:</label>
+                <input type="text" id="Contract ID" name="Contract ID" required>
+            </div>
+            </td>
+        <td>
+            <div class="form-group">
+                <label for="Theme Name">Theme Name:</label>
+                <select id="Theme Name" name="Theme Name" required>
+                    <option value="select">Select </option>
+                        <option value="Job ">Job </option>
+                        <option value="Growth">Growth</option>
+                        <option value="Social">Social</option>
+                        <option value="Environment">Environment </option>
+                    </select>
+            </div>
+        </td>
+        <td>
+            <div class="form-group">
+                <label for="Reference">Reference:</label>
+                <select id="Reference" name="Reference" required>
+                    <option value="select">Select</option>
+                    <option value="NT11"> NT11 </option>
+                    <option value="NT8">NT8</option>
+                    <option value="N17"> N17</option>
+                    <option value="NT29">NT29 </option>
+                    <option value="N20">NT20 </option>
+                    <option value="NT21">NT21</option>
+                    <option value="NT69">NT69</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">
+                <label for="Activity Name">Activity Name:</label>
+                <select id="Activity Name" name="Activity Name" required>
+                    <option value="select">Select</option>
+                    <option value="Promotion of Vacancies">Promotion of Vacancies  </option>
+                    <option value="Employment - Digital skills">Employment - Digital skills</option>
+                    <option value="School/College Career Talks">School/College Career Talks</option>
+                    <option value="School/college STEM Events">School/college STEM Events </option>
+                    <option value="Business support - Third sector">Business support - Third sector </option>
+                    <option value="Community Support - Online services">Community Support - Online services</option>
+                    <option value="MWB programme">MWB programme</option>
+                    <option value="EDI training">EDI training</option>
+                    <option value="Reduce carbon emissions">Reduce carbon emissions</option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">
+                <label for="Activity Description">Activity Description:</label>
+                <select id="Activity Description" name="Activity Description" required>
+                    <option value="select">Select </option>
+                    <option value="Vacancies advertised ">Vacancies advertised  </option>
+                    <option value="Pre-employment courses">Pre-employment courses</option>
+                    <option value="Career talks">Career talks</option>
+                    <option value="school activity">school activity</option>
+                    <option value="Webinar">Webinar  </option>
+                    <option value="digital literacy courses">digital literacy courses</option>
+                    <option value="Monthly wellbeing days">Monthly wellbeing days</option>
+                    <option value="MHWB training for staff">MHWB training for staff</option>
+                    <option value="Workshops">Workshops</option>
+                    <option value="Online training programmes ">Online training programmes </option>
+                </select> 
+            </div>
+        </td>
+
+        <td>
+
+            <div class="form-group">
+                <label for="status"></label>
+                    <input type="text" id="status" name="status" required>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">                
+                <label for="Proxy Unit">Proxy Unit:</label>
+                <select id="Proxy Unit" name="Proxy Unit" required>
+                    <option value="select">Select </option>
+                    <option value="No. hrs (total session duration)*no. atten>dees"> No. hrs (total session duration)*no. atten>dees </option> 
+                    <option value="No. staff volunteering hours"> No. staff volunteering hours </option>
+                    <option value="No. staff hours"> No. staff hours </option>
+                    <option value="No. employees provided access"> No. employees provided access </option>
+                    <option value="No. employees provided access"> No. employees provided access </option>
+                </select>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">    
+                <label for="Proxy Value (Per Unit)">Proxy Value (Per Unit):</label>
+                <select id="Proxy Value (Per Unit)" name="Proxy Value (Per Unit)" required>
+                    <option value="select">Select </option>
+                    <option value="£125.62">£125.62 </option> 
+                    <option value="£16.07"> £16.07 </option> 
+                    <option value="£16.07"> £16.07 </option>
+                    <option value="£124.30"> £124.30 </option>
+                    <option value="£96.11"> £96.11 </option>
+                </select>
+
+            </div>
+        </td>
+
+        <td>
+            
+            <div class="form-group">
+                <label for="Commited Units"></label>
+                    <input type="text" id="Commited Units" name="Commited Units" required>
+            </div>
+        </td>
+
+
+        <td>
+      
+            <div class="form-group">
+                <label for="Commited Value Per Activity	"></label>
+                    <input type="text" id="Commited Value Per Activity" name="Commited Value Per Activity" required>
+            </div>
+
+        </td>
+        <!-- (calculation formula required to be added here (simple multiplication) -->
+        
+        <td>
+            <div class="form-group">
+                <label for="Delivered Units	"></label>
+                    <input type="text" id="Delivered Units" name="Delivered Units" required>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">
+                <label for="Delivered Value Per Activity"></label>
+                    <input type="text" id="Delivered Value Per Activity" name="Delivered Value Per Activity" required>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">
+                <label for="Start Date"></label>
+                    <input type="text" id="Start Date" name="Start Date" required>
+            </div>
+        </td>
+
+        <td>
+            <div class="form-group">
+                <label for="End Date"></label>
+                    <input type="text" id="End Date" name="End Date" required>
+            </div>
+       
+        </td>
+       
+     <td>
+            <div class="form-group">
+                    <label for="Evidence Description">Evidence Description:</label>
+                        <input type="text" id="Evidence Description" name="Evidence Description" required>
+                    
+            </div>
+        </td>
+
+        <!--  For calculator : 
+        <td>
+
+           
+           
+                   <div class="container">
+                        <h2 style="color:rgb(11, 146, 56);"></h2> 
+                       Trigger the modal with a button 
+                       <label for="calculate">Calculate Social Value Here, <br/> Then Add Into Relevant Field: <br/> (Committed Value/Activity = <br/>Proxy Value/Unit * Committed Units) <br/> (Delivered Value/Activity =<br/> Proxy Value/Unit * Delivered Units)  </label>
+                       <button type="button" class="btn btn-default btn-lg" id="myBtn">Calculator</button>
+                     
+                   </div>
+                   
+           </td> -->
+
+
+        </table>
+       <div>
+         <!-- Trigger the modal with a button  -->
+        <label for="calculate">Calculate Social Value Here, Then Add Into Relevant Field Above:<br/>Committed Value/Activity = (Proxy Value/Unit * Committed Units) <br/> Delivered Value/Activity =<br/> (Proxy Value/Unit * Delivered Units)  </label>
+            <button type="button" class="btn btn-default btn-lg" id="myBtn">Calculator</button>
+                <!-- <label for="Calculator">Calculator</label></button> -->
+            </div>
+            <button type="button" onclick="exportToCSV()" id="myBtn">Add to CSV</button>
+        </form>
+    </div>
+</div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Social Value Calculator</h4>
+        </div>
+
+
+
+<div> 
+<div class="button1">
+  <div class=" Paragraph">
+  <p>Social value calculator</p>
+
+ 
+  <div class="calculator">
+             <input type="text" id="display" disabled>
+          <div class="buttons">
+         
+          <button onclick="appendNumber('1')">1</button>
+          <button onclick="appendNumber('2')">2</button>
+          <button onclick="appendNumber('3')">3</button>
+          <button onclick="appendOperator('+')">+</button>
+          <button onclick="appendNumber('4')">4</button>
+          <button onclick="appendNumber('5')">5</button>
+          <button onclick="appendNumber('6')">6</button>
+          <button onclick="appendOperator('-')">-</button>
+          <button onclick="appendNumber('7')">7</button>
+          <button onclick="appendNumber('8')">8</button>
+          <button onclick="appendNumber('9')">9</button>
+          <button onclick="appendOperator('*')">*</button>
+          <button onclick="appendNumber('0')">0</button>
+          <button onclick="appendOperator('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="appendOperator('/')">/</button>
+          <button onclick="clearDisplay()">C</button>
+      </div>
+  </div>
+</div>
+
+
+  <!-- <script src="script.js"></script>
+
+</div>      -->
+    <script src="scriptn1.js"></script>
+
+    
+</div>
+</body>
+</html>
