@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Necessary for absolute positioning of image 4 */
+}
+
+/* h1 Styles */
+h1 {
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+    z-index: 10; /* Ensures h1 stays on top of other elements */
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column; /* Stack image and buttons vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px; /* Create space under h1 */
+}
+
+/* Container for Image 3 and Buttons */
+.center-container {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between image and buttons */
+    margin-bottom: 20px; /* Space between the main container and image 4 */
+}
+
+/* Image Container */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container a {
+    display: block;
+    margin: 10px 0; /* Vertical spacing between buttons */
+    padding: 15px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ea9d0e;
+    color: #fff;
+}
+
+.button-container a:hover {
+    background-color: #b38f00;
+}
+
+/* Container for Image 4 */
+.image-four-container {
+    position: absolute;
+    bottom: 0px; /* Adjust this value for vertical positioning */
+    right: 50px;  /* Adjust this value for horizontal positioning */
+}
+
+.image-four-container img {
+    border-radius: 50%;
+    margin: 2px; /* Adjusted margin */
+    width: 180px; /* Adjust size as needed */
+    height: 160px; /* Adjust size as needed */
+}
+
+div {
+
+    /* Style for the image */
+.top-left-image {
+   position: absolute;  /* Allows specific positioning */
+   top: 150px;  /* Adjust vertical position */
+   left: 100px;  /* Adjust horizontal position */
+   width: 200px;  /* Set image width */
+   height: auto;  /* Keep aspect ratio */
+
+   border: 1px solid black;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   margin-right: 150px;
+   margin-left: 80px;
+   background-color: white;
+ }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: hsl(61, 80%, 46%);
+    border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
